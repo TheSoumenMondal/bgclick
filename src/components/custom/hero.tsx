@@ -115,15 +115,15 @@ const Hero = () => {
           <span className="pr-2 text-xs">
             <IconWheel className="w-4 h-4 group-hover:animate-spin" />
           </span>
-            <span className="pl-1">Pick a background style from the menu on the right</span>
+          <span className="pl-1">Pick a perfect background</span>
         </Button>
         <p className="text-3xl md:text-5xl lg:text-6xl max-w-xl font-semibold text-balance tracking-tight">
           Collection of modern backgrounds
         </p>
         <p className="text-xs md:text-sm max-w-xl">
           A curated collection of high-quality CSS patterns and gradients.
-          Instantly copy and integrate into any project—built with modern
-          Tailwind CSS.
+          Instantly copy and integrate into any project-built with modern{" "}
+          <span className="font-bold">Tailwind CSS.</span>
         </p>
         <div className="gap-5 flex">
           <Badge variant="secondary" className="bg-[#ff0fffa2] ">
