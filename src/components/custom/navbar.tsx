@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { IconBrandGithub, IconBrandTwitter } from "@tabler/icons-react";
@@ -28,8 +28,12 @@ const Navbar = () => {
       </Link>
       <div className="flex gap-2 md:gap-4">
         {home && <ThemeToggle className="cursor-pointer" />}
-        <IconBrandGithub className="w-5 h-5 cursor-pointer" />
-        <IconBrandTwitter className="w-5 h-5 cursor-pointer" />
+        <Link target="blank" href={"https://github.com/TheSoumenMondal"}>
+          <IconBrandGithub className="w-5 h-5 cursor-pointer" />
+        </Link>
+        <Link target="blank" href={"https://x.com/soumendotcom"}>
+          <IconBrandTwitter className="w-5 h-5 cursor-pointer" />
+        </Link>
       </div>
     </div>
   );

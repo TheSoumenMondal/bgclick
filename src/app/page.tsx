@@ -4,7 +4,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="w-full flex relative items-center flex-col h-screen">
+    <div className="w-full flex relative items-center flex-col h-screen select-none">
       <div className="w-full h-screen absolute flex items-center flex-col">
         <div className="w-full h-full relative max-w-5xl">
           <div

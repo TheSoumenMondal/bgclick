@@ -7,7 +7,6 @@ import reactElementToJSXString from "react-element-to-jsx-string";
 import { toast } from "sonner";
 import {
   IconConfettiFilled,
-  IconThumbUp,
   IconThumbUpFilled,
 } from "@tabler/icons-react";
 

@@ -8,7 +8,6 @@ import {
   IconCircleDot,
   IconGridDots,
   IconHighlightOff,
-  IconPalette,
   IconPrismLight,
   IconWheel,
 } from "@tabler/icons-react";
@@ -86,15 +85,18 @@ const Hero = () => {
   };
 
   const buttonData = [
+    {
+      icon: IconCircleDot,
+      text: "Glassmorphism Background",
+      link: "/glassmorphism",
+    },
     { icon: IconPrismLight, text: "Gradient Backgrounds", link: "/gradient" },
-    { icon: IconPalette, text: "Pattern Backgrounds", link: "" },
     {
       icon: IconHighlightOff,
       text: "Dark Glow effect backgrounds",
       link: "/dark-glow",
     },
     { icon: IconGridDots, text: "Background Grids", link: "/grid" },
-    { icon: IconCircleDot, text: "Glassmorphism Background", link: "/glassmorphism" },
     {
       icon: IconAlertCircleFilled,
       text: "Any Suggestions of backgrounds?",
@@ -113,7 +115,7 @@ const Hero = () => {
           <span className="pr-2 text-xs">
             <IconWheel className="w-4 h-4 group-hover:animate-spin" />
           </span>
-          <span className="pl-1">Choose what you want</span>
+            <span className="pl-1">Pick a background style from the menu on the right</span>
         </Button>
         <p className="text-3xl md:text-5xl lg:text-6xl max-w-xl font-semibold text-balance tracking-tight">
           Collection of modern backgrounds
@@ -126,7 +128,7 @@ const Hero = () => {
         <div className="gap-5 flex">
           <Badge variant="secondary" className="bg-[#ff0fffa2] ">
             <IconCircleDot />
-            Open Source
+            Easy to use
           </Badge>
           <Badge variant="outline">100% free</Badge>
           <Badge variant="default">One click copy</Badge>

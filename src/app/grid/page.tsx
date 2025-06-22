@@ -27,7 +27,7 @@ const Page = () => {
             variant={"outline"}
             className="rounded-full text-xs cursor-copy"
           >
-            Just copy and interate in your project 🎉
+            Just copy and use in your project 🎉
           </Button>
         </h2>
 
