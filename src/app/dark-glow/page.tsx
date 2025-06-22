@@ -18,8 +18,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import ColorWheel from "@/components/custom/color-wheel";
 import { toast } from "sonner";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const router = useRouter();
   const { setTheme } = useTheme();
   const { rgba } = useBackgroundGlow();
   const [copied, setCopied] = useState<boolean>(false);
@@ -77,18 +79,28 @@ const Page = () => {
 
       <div className="relative z-10 w-full h-full max-h-fit flex flex-col items-center justify-center">
         <div className="h-72 w-full flex items-center justify-center text-2xl font-bold select-none flex-col gap-3">
-          <span className="w-full max-w-sm scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
+          <span className="w-full max-w-sm scroll-m-20 text-center text-2xl md:text-4xl font-extrabold tracking-tight text-balance">
             Pick a background below to see it live
           </span>
 
-          <Button
-            variant="outline"
-            size="sm"
-            className="rounded-full text-xs cursor-pointer"
-          >
-            One click copy
-            <IconConfettiFilled className="w-4 h-4 text-orange-600" />
-          </Button>
+          <div className="flex flex-col md:flex-row items-center gap-2">
+            <Button
+              variant={"outline"}
+              size={"sm"}
+              className="rounded-full text-xs italic cursor-copy"
+            >
+              One click copy 🎉
+            </Button>
+            <Button
+              variant={"outline"}
+              size={"sm"}
+              onClick={() => router.push("/grid")}
+              className="rounded-full text-xs cursor-pointer"
+            >
+              View Grid Backgrounds
+              <IconChevronRight className="w-4 h-4" />
+            </Button>
+          </div>
 
           <Sheet>
             <SheetTrigger asChild>

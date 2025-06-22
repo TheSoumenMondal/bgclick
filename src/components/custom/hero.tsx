@@ -3,18 +3,18 @@
 import React from "react";
 import { Button } from "../ui/button";
 import {
-  IconAlertCircleFilled,
   IconChevronRight,
   IconCircleDot,
   IconGridDots,
   IconHighlightOff,
   IconPrismLight,
-  IconWheel,
+  IconStarFilled,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { Badge } from "../ui/badge";
+import Link from "next/link";
 
 const AnimatedIcon = ({
   children,
@@ -97,26 +97,29 @@ const Hero = () => {
       link: "/dark-glow",
     },
     { icon: IconGridDots, text: "Background Grids", link: "/grid" },
-    {
-      icon: IconAlertCircleFilled,
-      text: "Any Suggestions of backgrounds?",
-      link: "",
-    },
   ];
 
   return (
     <div className="w-full h-full flex flex-col items-center md:flex-row select-none px-8 md:px-4 xl:px-0">
       <div className="w-full h-1/2 md:h-full flex flex-col justify-center items-start space-y-5">
-        <Button
-          size={"sm"}
-          variant={"outline"}
-          className="rounded-full divide-x text-xs px-4 py-4 group cursor-pointer mt-10 md:mt-0"
+        <Link
+          target="blank"
+          href={"https://github.com/TheSoumenMondal/bgclick"}
         >
-          <span className="pr-2 text-xs">
-            <IconWheel className="w-4 h-4 group-hover:animate-spin" />
-          </span>
-          <span className="pl-1">Pick a perfect background</span>
-        </Button>
+          <Button
+            size={"sm"}
+            variant={"outline"}
+            className="rounded-full text-xs px-4 py-4 group cursor-pointer mt-10 md:mt-0"
+          >
+            <div className="flex gap-2">
+              <span className="text-xs">
+                <IconStarFilled className="w-4 h-4 group-hover:animate-spin text-yellow-500" />
+              </span>
+              <span className="pl-1">Give it a star</span>
+              <IconChevronRight />
+            </div>
+          </Button>
+        </Link>
         <p className="text-3xl md:text-5xl lg:text-6xl max-w-xl font-semibold text-balance tracking-tight">
           Collection of modern backgrounds
         </p>
@@ -125,6 +128,9 @@ const Hero = () => {
           Instantly copy and integrate into any project-built with modern{" "}
           <span className="font-bold">Tailwind CSS.</span>
         </p>
+        <div className="text-xs">
+          Choose the right one from the floating menu{" "}
+        </div>
         <div className="gap-5 flex">
           <Badge variant="secondary" className="bg-[#ff0fffa2] ">
             <IconCircleDot />
