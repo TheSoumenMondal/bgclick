@@ -8,7 +8,6 @@ import {
   IconGridDots,
   IconHighlightOff,
   IconPrismLight,
-  IconStarFilled,
   IconWand,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
