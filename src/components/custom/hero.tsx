@@ -9,6 +9,7 @@ import {
   IconHighlightOff,
   IconPrismLight,
   IconStarFilled,
+  IconWand,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
@@ -104,18 +105,16 @@ const Hero = () => {
       <div className="w-full h-1/2 md:h-full flex flex-col justify-center items-start space-y-5">
         <Link
           target="blank"
-          href={"https://github.com/TheSoumenMondal/bgclick"}
+          href={"/glassmorphism"}
         >
           <Button
             size={"sm"}
             variant={"outline"}
             className="rounded-full text-xs px-4 py-4 group cursor-pointer mt-10 md:mt-0"
           >
-            <div className="flex gap-2">
-              <span className="text-xs">
-                <IconStarFilled className="w-4 h-4 group-hover:animate-spin text-yellow-500" />
-              </span>
-              <span className="pl-1">Give it a star</span>
+            <div className="flex gap-1">
+              <IconWand className="w-3 h-3" />
+              <span className="pl-1">30 new glassmorphism backgrounds</span>
               <IconChevronRight />
             </div>
           </Button>

@@ -1,10 +1,10 @@
-"use client"
-import type { JSX } from "react"
+"use client";
+import type { JSX } from "react";
 
 export interface GlassmorphismBackgroundInterface {
-  name: string
-  code: JSX.Element
-  theme: "dark" | "light"
+  name: string;
+  code: JSX.Element;
+  theme: "dark" | "light";
 }
 
 export const GlassmorphismBackgrounds: GlassmorphismBackgroundInterface[] = [
@@ -1065,5 +1065,373 @@ export const GlassmorphismBackgrounds: GlassmorphismBackgroundInterface[] = [
       </div>
     ),
   },
-]
-
+  {
+    name: "Ethereal Aurora",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0a1a0f] via-[#1a2a1f] to-[#0f1a2a] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[10%] left-[15%] w-[400px] h-[60px] bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 rounded-full opacity-60 blur-3xl transform rotate-12 animate-pulse" />
+        <div className="absolute top-[25%] left-[35%] w-[350px] h-[80px] bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full opacity-55 blur-3xl transform -rotate-6" />
+        <div className="absolute top-[40%] left-[55%] w-[320px] h-[70px] bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full opacity-50 blur-3xl transform rotate-18" />
+        <div className="absolute top-[55%] left-[25%] w-[380px] h-[90px] bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 rounded-full opacity-45 blur-3xl transform -rotate-12" />
+        <div className="absolute top-[70%] left-[45%] w-[300px] h-[50px] bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 rounded-full opacity-40 blur-3xl transform rotate-8" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20 backdrop-blur-[12px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Celestial Bloom",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fefcf3] via-[#fef7ed] to-[#fef3e2] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[50%] left-[50%] w-[450px] h-[450px] bg-gradient-to-r from-rose-500/70 via-pink-500/60 to-orange-500/70 rounded-full opacity-50 blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-[25%] left-[20%] w-[200px] h-[200px] bg-gradient-to-r from-yellow-500/80 to-orange-600/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[20%] right-[15%] w-[280px] h-[280px] bg-gradient-to-r from-pink-600/70 to-rose-700/60 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[15%] right-[25%] w-[160px] h-[160px] bg-gradient-to-r from-orange-600/80 to-red-600/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[70%] w-[220px] h-[220px] bg-gradient-to-r from-amber-600/75 to-yellow-700/65 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[70%] right-[60%] w-[140px] h-[140px] bg-gradient-to-r from-red-600/80 to-pink-700/70 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/25 to-white/35 backdrop-blur-[10px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Molten Core",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#1a0a00] via-[#2a1500] to-[#3a1000] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[45%] left-[45%] w-[380px] h-[380px] bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 rounded-full opacity-70 blur-3xl transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
+        <div className="absolute top-[20%] left-[25%] w-[250px] h-[250px] bg-gradient-to-r from-orange-700 to-red-800 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[20%] w-[300px] h-[300px] bg-gradient-to-r from-yellow-600 to-orange-700 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[70%] left-[70%] w-[180px] h-[180px] bg-gradient-to-r from-red-500 to-pink-600 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute top-[15%] right-[35%] w-[200px] h-[200px] bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[15%] w-[160px] h-[160px] bg-gradient-to-r from-orange-600 to-red-700 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/30 backdrop-blur-[11px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Jade Garden",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#f0fdf4] via-[#ecfdf5] to-[#d1fae5] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[25%] w-[380px] h-[380px] bg-gradient-to-r from-emerald-600/70 via-green-600/60 to-teal-600/70 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[30%] w-[340px] h-[340px] bg-gradient-to-r from-green-700/65 via-emerald-700/55 to-teal-700/65 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[15%] right-[15%] w-[280px] h-[280px] bg-gradient-to-r from-teal-600/70 via-cyan-600/60 to-blue-600/70 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[60%] w-[240px] h-[240px] bg-gradient-to-r from-lime-600/75 via-green-700/65 to-emerald-700/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[70%] right-[70%] w-[200px] h-[200px] bg-gradient-to-r from-green-800/70 via-teal-800/60 to-emerald-800/70 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute bottom-[15%] left-[40%] w-[160px] h-[160px] bg-gradient-to-r from-teal-700/80 to-green-800/70 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-white/20 to-white/30 backdrop-blur-[9px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Cosmic Maelstrom",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0f0f2e] via-[#1a1a4e] to-[#0f1f3e] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[40%] left-[40%] w-[320px] h-[320px] bg-gradient-to-r from-purple-600 via-violet-500 to-indigo-600 rounded-full opacity-65 blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-[20%] left-[15%] w-[160px] h-[160px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[60%] left-[70%] w-[200px] h-[200px] bg-gradient-to-r from-pink-500 to-rose-400 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[25%] left-[25%] w-[160px] h-[160px] bg-gradient-to-r from-violet-500 to-purple-400 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[15%] right-[20%] w-[140px] h-[140px] bg-gradient-to-r from-indigo-500 to-blue-400 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[60%] right-[60%] w-[220px] h-[220px] bg-gradient-to-r from-cyan-500 to-teal-400 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[15%] right-[15%] w-[120px] h-[120px] bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/15 backdrop-blur-[13px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Golden Nectar",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fffbeb] via-[#fef3c7] to-[#fde68a] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[35%] left-[35%] w-[400px] h-[400px] bg-gradient-to-r from-amber-500/70 via-yellow-500/60 to-orange-500/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[30%] right-[25%] w-[350px] h-[350px] bg-gradient-to-r from-yellow-600/75 via-amber-600/65 to-orange-600/75 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[15%] right-[15%] w-[300px] h-[300px] bg-gradient-to-r from-orange-600/70 via-red-600/60 to-pink-600/70 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[65%] left-[65%] w-[250px] h-[250px] bg-gradient-to-r from-yellow-700/80 via-orange-700/70 to-red-700/80 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[75%] right-[40%] w-[200px] h-[200px] bg-gradient-to-r from-amber-700/75 to-yellow-800/65 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[20%] w-[180px] h-[180px] bg-gradient-to-r from-orange-700/80 to-red-800/70 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-white/25 backdrop-blur-[8px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Abyssal Depths",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#000033] via-[#001a4d] to-[#000066] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[50%] left-[50%] w-[450px] h-[450px] bg-gradient-to-r from-blue-800/80 via-indigo-800/70 to-purple-800/80 rounded-full opacity-70 blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-[20%] left-[20%] w-[200px] h-[200px] bg-gradient-to-r from-cyan-600 to-blue-700 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[250px] h-[250px] bg-gradient-to-r from-blue-700 to-indigo-800 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[70%] right-[15%] w-[180px] h-[180px] bg-gradient-to-r from-indigo-700 to-purple-800 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[70%] left-[70%] w-[160px] h-[160px] bg-gradient-to-r from-purple-700 to-violet-800 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[30%] right-[70%] w-[140px] h-[140px] bg-gradient-to-r from-blue-600 to-cyan-700 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[40%] left-[15%] w-[220px] h-[220px] bg-gradient-to-r from-teal-700 to-blue-800 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/35 backdrop-blur-[14px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Prismatic Dawn",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#ffffff] via-[#fef7ff] to-[#f3e8ff] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[20%] w-[300px] h-[300px] bg-gradient-to-r from-red-500/60 via-orange-500/50 to-yellow-500/60 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[45%] left-[50%] w-[280px] h-[280px] bg-gradient-to-r from-yellow-500/65 via-green-500/55 to-cyan-500/65 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[65%] left-[30%] w-[260px] h-[260px] bg-gradient-to-r from-cyan-500/70 via-blue-500/60 to-purple-500/70 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[35%] right-[20%] w-[240px] h-[240px] bg-gradient-to-r from-purple-500/75 via-pink-500/65 to-red-500/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[60%] w-[220px] h-[220px] bg-gradient-to-r from-green-500/80 via-teal-500/70 to-blue-500/80 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute top-[15%] right-[60%] w-[200px] h-[200px] bg-gradient-to-r from-orange-500/85 via-red-500/75 to-pink-500/85 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/45 via-white/30 to-white/40 backdrop-blur-[12px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Shadowmere",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#2a2a2a] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[40%] left-[40%] w-[350px] h-[350px] bg-gradient-to-r from-gray-600/60 via-slate-600/50 to-zinc-600/60 rounded-full opacity-50 blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-[25%] left-[25%] w-[200px] h-[200px] bg-gradient-to-r from-neutral-500/70 to-stone-600/60 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[30%] right-[30%] w-[250px] h-[250px] bg-gradient-to-r from-slate-500/75 to-gray-600/65 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[70%] left-[70%] w-[180px] h-[180px] bg-gradient-to-r from-zinc-500/80 to-neutral-600/70 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute top-[15%] right-[25%] w-[160px] h-[160px] bg-gradient-to-r from-stone-500/85 to-slate-600/75 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute bottom-[65%] left-[15%] w-[220px] h-[220px] bg-gradient-to-r from-gray-700/70 to-zinc-700/60 rounded-full opacity-25 blur-3xl" />
+        <div className="absolute bottom-[15%] right-[65%] w-[140px] h-[140px] bg-gradient-to-r from-neutral-700/75 to-stone-700/65 rounded-full opacity-20 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-black/45 backdrop-blur-[15px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Coral Symphony",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fff8f1] via-[#ffedd5] to-[#fed7aa] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[30%] w-[370px] h-[370px] bg-gradient-to-r from-orange-500/70 via-coral-500/60 to-pink-500/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[340px] h-[340px] bg-gradient-to-r from-pink-600/75 via-rose-600/65 to-red-600/75 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[15%] right-[15%] w-[300px] h-[300px] bg-gradient-to-r from-red-600/70 via-orange-600/60 to-yellow-600/70 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[60%] w-[260px] h-[260px] bg-gradient-to-r from-coral-600/80 via-pink-700/70 to-rose-700/80 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[70%] right-[40%] w-[220px] h-[220px] bg-gradient-to-r from-orange-700/75 via-red-700/65 to-pink-800/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[20%] w-[180px] h-[180px] bg-gradient-to-r from-yellow-600/85 to-orange-700/75 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-white/20 to-white/30 backdrop-blur-[9px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Quantum Flux",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0f0f23] via-[#16213e] to-[#1a1a3a] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[20%] left-[20%] w-[160px] h-[160px] bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-65 blur-3xl animate-pulse" />
+        <div className="absolute top-[40%] left-[60%] w-[140px] h-[140px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[60%] left-[30%] w-[180px] h-[180px] bg-gradient-to-r from-green-400 to-teal-500 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[200px] h-[200px] bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[15%] right-[40%] w-[120px] h-[120px] bg-gradient-to-r from-pink-500 to-rose-500 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[70%] w-[100px] h-[100px] bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[80%] right-[15%] w-[220px] h-[220px] bg-gradient-to-r from-violet-500 to-purple-600 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute bottom-[80%] left-[80%] w-[80px] h-[80px] bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/20 backdrop-blur-[11px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Silk Cascade",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fefce8] via-[#fef3c7] to-[#fde047] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[15%] left-[50%] w-[400px] h-[80px] bg-gradient-to-r from-yellow-500/70 via-amber-500/60 to-orange-500/70 rounded-full opacity-60 blur-3xl transform -translate-x-1/2 rotate-12" />
+        <div className="absolute top-[30%] left-[50%] w-[380px] h-[75px] bg-gradient-to-r from-amber-600/75 via-yellow-600/65 to-lime-600/75 rounded-full opacity-55 blur-3xl transform -translate-x-1/2 rotate-8" />
+        <div className="absolute top-[45%] left-[50%] w-[360px] h-[70px] bg-gradient-to-r from-orange-600/80 via-red-600/70 to-pink-600/80 rounded-full opacity-50 blur-3xl transform -translate-x-1/2 rotate-4" />
+        <div className="absolute top-[60%] left-[50%] w-[340px] h-[65px] bg-gradient-to-r from-lime-600/85 via-green-600/75 to-teal-600/85 rounded-full opacity-45 blur-3xl transform -translate-x-1/2 rotate-0" />
+        <div className="absolute top-[75%] left-[50%] w-[320px] h-[60px] bg-gradient-to-r from-red-600/90 via-pink-600/80 to-rose-600/90 rounded-full opacity-40 blur-3xl transform -translate-x-1/2 -rotate-4" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-white/25 backdrop-blur-[8px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Nebula Storm",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0a0015] via-[#1a0033] to-[#2a0066] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[35%] left-[40%] w-[320px] h-[320px] bg-gradient-to-r from-purple-600/80 via-violet-600/70 to-indigo-600/80 rounded-full opacity-70 blur-3xl" />
+        <div className="absolute top-[20%] left-[60%] w-[240px] h-[240px] bg-gradient-to-r from-pink-500/75 via-rose-500/65 to-red-500/75 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[30%] left-[20%] w-[280px] h-[280px] bg-gradient-to-r from-blue-600/70 via-cyan-600/60 to-teal-600/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[70%] right-[15%] w-[200px] h-[200px] bg-gradient-to-r from-violet-500/85 via-purple-500/75 to-pink-500/85 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[15%] right-[60%] w-[180px] h-[180px] bg-gradient-to-r from-indigo-500/90 via-blue-500/80 to-cyan-500/90 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[10%] left-[15%] w-[160px] h-[160px] bg-gradient-to-r from-rose-500/95 to-pink-600/85 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[70%] right-[70%] w-[220px] h-[220px] bg-gradient-to-r from-teal-600/80 to-blue-700/70 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-black/25 backdrop-blur-[13px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Citrus Burst",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fff9c4] via-[#fef3c7] to-[#ffb74d] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[25%] w-[380px] h-[380px] bg-gradient-to-r from-orange-500/70 via-yellow-500/60 to-lime-500/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[350px] h-[350px] bg-gradient-to-r from-yellow-600/75 via-orange-600/65 to-red-600/75 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[55%] right-[10%] w-[300px] h-[300px] bg-gradient-to-r from-lime-600/80 via-green-600/70 to-teal-600/80 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[70%] left-[70%] w-[250px] h-[250px] bg-gradient-to-r from-amber-600/85 via-yellow-700/75 to-orange-700/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[10%] right-[40%] w-[200px] h-[200px] bg-gradient-to-r from-red-600/90 via-pink-600/80 to-rose-600 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[40%] left-[10%] w-[180px] h-[180px] bg-gradient-to-r from-green-600/95 to-lime-700/85 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-white/20 to-white/30 backdrop-blur-[9px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Arctic Aurora",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#f0f4f8] via-[#e2e8f0] to-[#b3e5fc] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[25%] w-[380px] h-[380px] bg-gradient-to-r from-blue-500/70 via-cyan-500/60 to-teal-500/70 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[30%] right-[25%] w-[350px] h-[350px] bg-gradient-to-r from-cyan-600/75 via-blue-600/65 to-indigo-600/75 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[60%] right-[10%] w-[310px] h-[310px] bg-gradient-to-r from-teal-600/80 via-green-600/70 to-emerald-600/80 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[10%] right-[30%] w-[270px] h-[270px] bg-gradient-to-r from-indigo-600/85 via-purple-600/75 to-violet-600/85 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[65%] left-[65%] w-[230px] h-[230px] bg-gradient-to-r from-blue-700/90 via-cyan-700/80 to-teal-700/90 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[30%] w-[190px] h-[190px] bg-gradient-to-r from-green-700/95 to-emerald-800/85 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/25 to-white/35 backdrop-blur-[10px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Midnight Prism",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0f0f2e] via-[#1a1a4e] to-[#2e0f2e] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[25%] w-[220px] h-[220px] bg-gradient-to-r from-purple-500/70 via-violet-500/60 to-indigo-500/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[35%] right-[30%] w-[200px] h-[200px] bg-gradient-to-r from-pink-500/75 via-rose-500/65 to-red-500/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[55%] left-[55%] w-[180px] h-[180px] bg-gradient-to-r from-blue-500/80 via-cyan-500/70 to-teal-500/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[40%] right-[10%] w-[160px] h-[160px] bg-gradient-to-r from-cyan-500/85 via-blue-500/75 to-purple-500/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[15%] left-[45%] w-[140px] h-[140px] bg-gradient-to-r from-violet-500/90 via-purple-500/80 to-pink-500/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[70%] right-[70%] w-[120px] h-[120px] bg-gradient-to-r from-indigo-500/95 via-violet-500/85 to-purple-500/95 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[10%] left-[60%] w-[100px] h-[100px] bg-gradient-to-r from-teal-500 to-cyan-600/95 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute bottom-[50%] right-[40%] w-[240px] h-[240px] bg-gradient-to-r from-rose-500/70 via-pink-500/60 to-purple-500/70 rounded-full opacity-30 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/20 backdrop-blur-[12px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Sunset Mirage",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fff7ed] via-[#ffedd5] to-[#fb923c] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[20%] left-[25%] w-[420px] h-[420px] bg-gradient-to-r from-orange-500/70 via-red-500/60 to-pink-500/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[30%] w-[390px] h-[390px] bg-gradient-to-r from-yellow-500/75 via-orange-600/65 to-red-600/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[55%] left-[15%] w-[350px] h-[350px] bg-gradient-to-r from-pink-600/80 via-rose-600/70 to-red-700/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[10%] right-[15%] w-[310px] h-[310px] bg-gradient-to-r from-red-600/85 via-pink-700/75 to-purple-700/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[60%] right-[60%] w-[270px] h-[270px] bg-gradient-to-r from-amber-600/90 via-yellow-700/80 to-orange-700/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[15%] left-[40%] w-[230px] h-[230px] bg-gradient-to-r from-orange-700/95 to-red-800/85 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-white/25 backdrop-blur-[8px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Galactic Drift",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0c0c0c] via-[#1f1f3a] to-[#0f1f2f] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[35%] left-[40%] w-[300px] h-[300px] bg-gradient-to-r from-blue-600/70 via-purple-600/60 to-violet-600/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[260px] h-[260px] bg-gradient-to-r from-purple-600/75 via-pink-600/65 to-rose-600/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[15%] left-[15%] w-[220px] h-[220px] bg-gradient-to-r from-cyan-500/80 via-blue-500/70 to-indigo-500/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[60%] right-[60%] w-[180px] h-[180px] bg-gradient-to-r from-pink-500/85 via-rose-500/75 to-red-500/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[70%] left-[70%] w-[160px] h-[160px] bg-gradient-to-r from-indigo-500/90 via-violet-500/80 to-purple-500/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[10%] left-[45%] w-[240px] h-[240px] bg-gradient-to-r from-violet-600/75 via-purple-600/65 to-indigo-600/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[50%] right-[10%] w-[140px] h-[140px] bg-gradient-to-r from-teal-500/95 to-cyan-600/85 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-black/25 backdrop-blur-[13px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Pearl Essence",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#ffffff] via-[#f8fafc] to-[#f1f5f9] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[30%] w-[400px] h-[400px] bg-gradient-to-r from-slate-500/60 via-gray-500/50 to-zinc-500/60 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[30%] right-[30%] w-[370px] h-[370px] bg-gradient-to-r from-zinc-600/65 via-slate-600/55 to-neutral-600/65 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[15%] right-[15%] w-[330px] h-[330px] bg-gradient-to-r from-neutral-600/70 via-stone-600/60 to-gray-600/70 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[65%] left-[65%] w-[290px] h-[290px] bg-gradient-to-r from-gray-700/75 via-zinc-700/65 to-slate-700/75 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[70%] right-[40%] w-[250px] h-[250px] bg-gradient-to-r from-stone-700/80 via-neutral-700/70 to-gray-800/80 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[20%] w-[210px] h-[210px] bg-gradient-to-r from-slate-800/85 to-zinc-900/75 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-white/35 to-white/45 backdrop-blur-[14px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Electric Storm",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f1419] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[30%] w-[320px] h-[320px] bg-gradient-to-r from-blue-500/70 via-cyan-500/60 to-teal-500/70 rounded-full opacity-65 blur-3xl animate-pulse" />
+        <div className="absolute bottom-[30%] left-[10%] w-[280px] h-[280px] bg-gradient-to-r from-cyan-400/75 via-blue-400/65 to-indigo-400/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[60%] right-[20%] w-[240px] h-[240px] bg-gradient-to-r from-purple-500/80 via-violet-500/70 to-pink-500/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[15%] right-[40%] w-[200px] h-[200px] bg-gradient-to-r from-teal-500/85 via-cyan-500/75 to-blue-500/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[15%] right-[60%] w-[180px] h-[180px] bg-gradient-to-r from-indigo-500/90 via-purple-500/80 to-violet-500/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[70%] left-[70%] w-[260px] h-[260px] bg-gradient-to-r from-blue-600/75 via-cyan-600/65 to-teal-600/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-slate-900/15 to-slate-900/25 backdrop-blur-[11px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Lavender Dreams",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#f3e8ff] via-[#e9d5ff] to-[#c084fc] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[25%] left-[30%] w-[390px] h-[390px] bg-gradient-to-r from-purple-500/70 via-violet-500/60 to-indigo-500/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[360px] h-[360px] bg-gradient-to-r from-violet-600/75 via-purple-600/65 to-pink-600/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[15%] right-[15%] w-[320px] h-[320px] bg-gradient-to-r from-indigo-600/80 via-blue-600/70 to-cyan-600/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[60%] w-[280px] h-[280px] bg-gradient-to-r from-purple-700/85 via-violet-700/75 to-indigo-700/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[70%] right-[40%] w-[240px] h-[240px] bg-gradient-to-r from-pink-700/90 via-rose-700/80 to-red-700/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[20%] left-[20%] w-[200px] h-[200px] bg-gradient-to-r from-violet-800/95 to-purple-900/85 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-white/20 to-white/30 backdrop-blur-[9px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Obsidian Flame",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#1a0000] via-[#330a0a] to-[#1a1a1a] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[30%] w-[300px] h-[300px] bg-gradient-to-r from-red-500/70 via-orange-500/60 to-yellow-500/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[25%] right-[25%] w-[270px] h-[270px] bg-gradient-to-r from-orange-600/75 via-red-600/65 to-pink-600/75 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute top-[15%] right-[35%] w-[240px] h-[240px] bg-gradient-to-r from-yellow-500/80 via-amber-500/70 to-orange-600/80 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute bottom-[60%] left-[60%] w-[210px] h-[210px] bg-gradient-to-r from-red-600/85 via-rose-600/75 to-pink-700/85 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute top-[70%] right-[15%] w-[180px] h-[180px] bg-gradient-to-r from-orange-700/90 via-red-700/80 to-rose-700/90 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute bottom-[15%] left-[40%] w-[250px] h-[250px] bg-gradient-to-r from-pink-600/75 via-rose-600/65 to-red-700/75 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute top-[50%] left-[10%] w-[160px] h-[160px] bg-gradient-to-r from-yellow-600/95 to-orange-700/85 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/20 to-black/30 backdrop-blur-[12px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Moonlit Garden",
+    theme: "light",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#fefce8] via-[#f7fee7] to-[#ecfccb] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[50%] w-[420px] h-[100px] bg-gradient-to-r from-yellow-500/70 via-lime-500/60 to-green-500/70 rounded-full opacity-60 blur-3xl transform -translate-x-1/2 rotate-15" />
+        <div className="absolute top-[45%] left-[50%] w-[400px] h-[90px] bg-gradient-to-r from-green-600/75 via-emerald-600/65 to-teal-600/75 rounded-full opacity-55 blur-3xl transform -translate-x-1/2 rotate-10" />
+        <div className="absolute top-[60%] left-[50%] w-[380px] h-[80px] bg-gradient-to-r from-teal-600/80 via-cyan-600/70 to-blue-600/80 rounded-full opacity-50 blur-3xl transform -translate-x-1/2 rotate-5" />
+        <div className="absolute top-[75%] left-[50%] w-[360px] h-[70px] bg-gradient-to-r from-blue-600/85 via-indigo-600/75 to-purple-600/85 rounded-full opacity-45 blur-3xl transform -translate-x-1/2 rotate-0" />
+        <div className="absolute top-[20%] left-[20%] w-[200px] h-[200px] bg-gradient-to-r from-lime-600/90 via-yellow-600/80 to-amber-600/90 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute bottom-[20%] right-[20%] w-[180px] h-[180px] bg-gradient-to-r from-emerald-700/95 to-green-800/85 rounded-full opacity-35 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/15 to-white/25 backdrop-blur-[8px]" />
+      </div>
+    ),
+  },
+  {
+    name: "Stellar Winds",
+    theme: "dark",
+    code: (
+      <div className="relative w-full h-screen bg-gradient-to-br from-[#000011] via-[#001122] to-[#000033] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-[30%] left-[40%] w-[280px] h-[280px] bg-gradient-to-r from-blue-400/70 via-cyan-400/60 to-teal-400/70 rounded-full opacity-65 blur-3xl" />
+        <div className="absolute bottom-[20%] right-[35%] w-[250px] h-[250px] bg-gradient-to-r from-cyan-300/75 via-blue-300/65 to-indigo-300/75 rounded-full opacity-70 blur-3xl" />
+        <div className="absolute top-[15%] left-[15%] w-[220px] h-[220px] bg-gradient-to-r from-teal-400/80 via-green-400/70 to-lime-400/80 rounded-full opacity-60 blur-3xl" />
+        <div className="absolute bottom-[60%] right-[15%] w-[190px] h-[190px] bg-gradient-to-r from-sky-400/85 via-cyan-400/75 to-blue-400/85 rounded-full opacity-55 blur-3xl" />
+        <div className="absolute top-[70%] left-[70%] w-[160px] h-[160px] bg-gradient-to-r from-indigo-400/90 via-purple-400/80 to-violet-400/90 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-[40%] left-[20%] w-[200px] h-[200px] bg-gradient-to-r from-blue-500/75 via-cyan-500/65 to-teal-500/75 rounded-full opacity-45 blur-3xl" />
+        <div className="absolute top-[50%] right-[10%] w-[140px] h-[140px] bg-gradient-to-r from-green-400/95 to-lime-500/85 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/20 to-black/30 backdrop-blur-[13px]" />
+      </div>
+    ),
+  },
+];
